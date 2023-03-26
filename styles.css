@@ -11,7 +11,8 @@ body {
   background-color: #007bff;
 }
 
-.start-btn {
+.start-btn,
+.info-box {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
