@@ -57,3 +57,8 @@ body {
   margin: 5px 0;
   font-size: 17px;
 }
+
+.info-box .info-list .info span {
+  font-weight: 600;
+  color: #007bff;
+}
