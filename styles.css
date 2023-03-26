@@ -17,3 +17,16 @@ body {
   top: 50%;
   left: 50%;
 }
+
+/* start quiz button styling */
+.start-btn button {
+  font-size: 25px;
+  font-weight: 500;
+  color: #007bff;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
