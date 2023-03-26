@@ -31,3 +31,9 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
+
+.info-box {
+  width: 540px;
+  background-color: #fff;
+  border-radius: 5px;
+}
