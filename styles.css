@@ -33,6 +33,7 @@ body {
 }
 
 .info-box {
+  display: none;
   width: 540px;
   background-color: #fff;
   border-radius: 5px;
