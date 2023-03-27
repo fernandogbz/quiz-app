@@ -62,3 +62,12 @@ body {
   font-weight: 600;
   color: #007bff;
 }
+
+.info-box .buttons {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 35px;
+  border-top: 1px solid lightgray;
+}
