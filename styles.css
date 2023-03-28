@@ -121,3 +121,8 @@ body {
   border-radius: 5px 5px 0 0;
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.1);
 }
+
+.quiz-box header .title {
+  font-size: 20px;
+  font-weight: 600;
+}
