@@ -176,3 +176,16 @@ body {
   padding: 20px 0;
   display: block;
 }
+
+section .option-list .option {
+  font-size: 17px;
+  background-color: aliceblue;
+  border: 1px solid #84c5fe;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
