@@ -223,3 +223,12 @@ section .option-list .option:hover{
   background-color: #f8d7da;
   border-color: #a42834;
 }
+
+.quiz-box footer {
+  height: 60px;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
