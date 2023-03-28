@@ -206,4 +206,14 @@ section .option-list .option:hover{
   width: 26px;
   border: 2px solid transparent;
   border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  line-height: 24px;
+  pointer-events: none;
+}
+
+.option-list .option .icon.tick {
+  color: #23903c;
+  border-color: #23903c;
+  background-color: #d4edda;
 }
