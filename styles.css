@@ -232,3 +232,18 @@ section .option-list .option:hover{
   align-items: center;
   justify-content: space-between;
 }
+
+.quiz-box footer .total-questions span {
+  display: flex;
+  user-select: none;
+}
+
+footer .total-questions span p {
+  font-weight: 500;
+  padding: 0 5px;
+}
+
+.total-questions span p:first-child {
+  padding-left: 0px;
+}
+
