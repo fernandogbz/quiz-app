@@ -247,3 +247,16 @@ footer .total-questions span p {
   padding-left: 0px;
 }
 
+footer .next-btn {
+  height: 40px;
+  padding: 0 13px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
