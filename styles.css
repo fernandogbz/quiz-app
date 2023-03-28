@@ -125,6 +125,7 @@ body {
 .quiz-box header .title {
   font-size: 20px;
   font-weight: 600;
+  user-select: none;
 }
 
 .quiz-box header .timer {
@@ -137,4 +138,10 @@ body {
   border: 1px solid #b8daff;
   border-radius: 5px;
   padding: 0 8px;
+}
+
+.quiz-box header .timer .time-text {
+  font-size: 17px;
+  font-weight: 400;
+  user-select: none;
 }
