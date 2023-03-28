@@ -196,3 +196,14 @@ section .option-list .option:hover{
   background-color: #cce5ff;
   border-color: #b8daff;
 }
+
+.option-list .option:last-child {
+  margin-bottom: 0px;
+}
+
+.option-list .option .icon {
+  height: 26px;
+  width: 26px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
