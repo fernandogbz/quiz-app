@@ -110,3 +110,14 @@ body {
   background-color: #fff;
   border-radius: 5px;
 }
+
+.quiz-box header {
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
