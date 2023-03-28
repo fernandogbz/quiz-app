@@ -188,4 +188,11 @@ section .option-list .option {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+section .option-list .option:hover{
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
 }
