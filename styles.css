@@ -104,3 +104,9 @@ body {
   color: #fff;
   background-color: #007bff;
 }
+
+.quiz-box {
+  width: 550px;
+  background-color: #fff;
+  border-radius: 5px;
+}
