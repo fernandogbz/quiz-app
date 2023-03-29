@@ -290,3 +290,10 @@ footer .next-btn:hover {
   font-size: 20px;
   font-weight: 500;
 }
+
+.result-box .score-text span {
+  display: flex;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
