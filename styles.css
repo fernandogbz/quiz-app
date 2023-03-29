@@ -279,3 +279,9 @@ footer .next-btn:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.result-box .icon {
+  font-size: 100px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
