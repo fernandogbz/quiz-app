@@ -13,7 +13,8 @@ body {
 
 .start-btn,
 .info-box,
-.quiz-box {
+.quiz-box,
+.result-box {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -265,4 +266,8 @@ footer .next-btn {
 
 footer .next-btn:hover {
   background-color: #0263ca;
+}
+
+.result-box {
+  background-color: #fff;
 }
