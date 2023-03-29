@@ -307,3 +307,17 @@ footer .next-btn:hover {
   display: flex;
   margin: 20px 0;
 }
+
+.result-box .buttons button {
+  margin: 0 10px;
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
