@@ -297,3 +297,8 @@ footer .next-btn:hover {
   font-size: 18px;
   font-weight: 500;
 }
+
+.score-text span p {
+  font-weight: 600;
+  padding: 0 4px;
+}
