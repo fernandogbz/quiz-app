@@ -302,3 +302,8 @@ footer .next-btn:hover {
   font-weight: 600;
   padding: 0 4px;
 }
+
+.result-box .buttons {
+  display: flex;
+  margin: 20px 0;
+}
