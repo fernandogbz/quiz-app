@@ -285,3 +285,8 @@ footer .next-btn:hover {
   color: #007bff;
   margin-bottom: 10px;
 }
+
+.result-box .complete-text {
+  font-size: 20px;
+  font-weight: 500;
+}
