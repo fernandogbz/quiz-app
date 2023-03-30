@@ -19,8 +19,14 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
-              0px 6px 20px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2),
+              0px 10px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+.start-btn button:hover {
+  color: #fff;
+  background-color: #0263ca;
+  border: 2px solid #fff;
 }
 
 .info-box.activeInfo {
