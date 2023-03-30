@@ -6,5 +6,10 @@ const continueBtn = infoBox.querySelector(".buttons .restart");
 
 // When start button clicked
 startBtn.onclick = () => {
-  infoBox.classList.add("activeInfo");
+  infoBox.classList.add("activeInfo"); // show the info box
+}
+
+// When exit button clicked
+exitBtn.onclick = () => {
+  infoBox.classList.remove("activeInfo"); // hide the info box
 }
