@@ -19,6 +19,14 @@ exitBtn.onclick = () => {
 continueBtn.onclick = () => {
   infoBox.classList.remove("activeInfo"); // hide the info box
   quizBox.classList.add("activeQuiz"); // show the quiz box
+  showQuestions();
 }
 
 let questionCount = 0;
+
+// Getting questions and options from array
+function showQuestions() {
+  const questionText = document.querySelector(".question-text");
+  let questionTag = '<span>' + questions[1].question + '</span>';
+  questionText.innerHTML = questionTag;
+}
