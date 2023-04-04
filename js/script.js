@@ -59,7 +59,8 @@ function showQuestions(index) {
 
 function optionSelected(answer) {
   let userAns = answer.textContent;
-  console.log(userAns);
+  let correctAns = questions[questionCount].answer;
+  console.log(correctAns);
 }
 
 function questionCounter(index) {
