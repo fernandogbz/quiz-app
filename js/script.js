@@ -20,3 +20,5 @@ continueBtn.onclick = () => {
   infoBox.classList.remove("activeInfo"); // hide the info box
   quizBox.classList.add("activeQuiz"); // show the quiz box
 }
+
+let questionCount = 0;
