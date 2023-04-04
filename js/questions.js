@@ -12,7 +12,7 @@ let questions = [
     ]
   },
   {
-    numb: 2,
+    num: 2,
     question: "What does CSS stand for?",
     answer: "Cascading Style Sheet",
     options: [
@@ -23,7 +23,7 @@ let questions = [
     ]
   },
     {
-    numb: 3,
+    num: 3,
     question: "What does PHP stand for?",
     answer: "Hypertext Preprocessor",
     options: [
@@ -34,7 +34,7 @@ let questions = [
     ]
   },
     {
-    numb: 4,
+    num: 4,
     question: "What does SQL stand for?",
     answer: "Structured Query Language",
     options: [
@@ -45,7 +45,7 @@ let questions = [
     ]
   },
     {
-    numb: 5,
+    num: 5,
     question: "What does XML stand for?",
     answer: "eXtensible Markup Language",
     options: [
