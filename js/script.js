@@ -60,7 +60,11 @@ function showQuestions(index) {
 function optionSelected(answer) {
   let userAns = answer.textContent;
   let correctAns = questions[questionCount].answer;
-  console.log(correctAns);
+  if(userAns == correctAns) {
+    console.log("Answer is Correct");
+  } else {
+    console.log("Answer is Wrong");
+  }
 }
 
 function questionCounter(index) {
