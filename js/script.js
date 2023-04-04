@@ -57,6 +57,11 @@ function showQuestions(index) {
   }
 }
 
+function optionSelected(answer) {
+  let userAns = answer.textContent;
+  console.log(userAns);
+}
+
 function questionCounter(index) {
   const bottomQuestionCounter = quizBox.querySelector(".total-questions");
   let totalQuestionCountTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
