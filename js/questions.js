@@ -40,8 +40,8 @@ let questions = [
     options: [
       "Stylish Question Language",
       "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Structured Query Language",
+      "Statement Question Language"
     ]
   },
     {
@@ -49,10 +49,10 @@ let questions = [
     question: "What does XML stand for?",
     answer: "eXtensible Markup Language",
     options: [
-      "eXtensible Markup Language",
       "eXecutable Multiple Language",
       "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "eXamine Multiple Language",
+      "eXtensible Markup Language"
     ]
   },
 ];
