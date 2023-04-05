@@ -30,6 +30,7 @@ continueBtn.onclick = () => {
 let questionCount = 0;
 let questionNumber = 1;
 let counter;
+let timeValue = 15;
 
 const nextBtn = quizBox.querySelector(".next-btn");
 
