@@ -41,7 +41,8 @@ nextBtn.onclick = () => {
     questionNumber++;
     showQuestions(questionCount);
     questionCounter(questionNumber);
-    startTimer(15);
+    clearInterval(counter);
+    startTimer(timeValue);
   } else {
     console.log("Questions completed");
   }
