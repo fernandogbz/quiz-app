@@ -101,6 +101,10 @@ function startTimer(time) {
   function timer() {
     timeCount.textContent = time;
     time--;
+    if (time < 0) {
+      clearInterval(counter);
+      timeCount.textContent = "00";
+    }
   }
 }
 
