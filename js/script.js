@@ -68,6 +68,7 @@ function optionSelected(answer) {
   if(userAns == correctAns) {
     answer.classList.add("correct");
     console.log("Answer is Correct");
+    answer.insertAdjacentHTML("beforeend", tickIcon);
   } else {
     answer.classList.add("incorrect");
     console.log("Answer is Wrong");
