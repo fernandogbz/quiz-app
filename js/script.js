@@ -59,6 +59,7 @@ function showQuestions(index) {
 }
 
 let tickIcon = '<div class="icon tick"><i class="fa-solid fa-check"></i></div>'
+let crossIcon = '<div class="icon cross"><i class="fa-solid fa-times"></i></div>'
 
 function optionSelected(answer) {
   let userAns = answer.textContent;
