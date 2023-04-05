@@ -72,6 +72,7 @@ function optionSelected(answer) {
   } else {
     answer.classList.add("incorrect");
     console.log("Answer is Wrong");
+    answer.insertAdjacentHTML("beforeend", crossIcon);
     
     // if answer is incorrect then automatically select the right answer
     for (let i = 0; i < allOptions; i++) {
