@@ -58,6 +58,8 @@ function showQuestions(index) {
   }
 }
 
+let tickIcon = '<div class="icon tick"><i class="fa-solid fa-check"></i></div>'
+
 function optionSelected(answer) {
   let userAns = answer.textContent;
   let correctAns = questions[questionCount].answer;
@@ -68,7 +70,7 @@ function optionSelected(answer) {
   } else {
     answer.classList.add("incorrect");
     console.log("Answer is Wrong");
-
+    
     // if answer is incorrect then automatically select the right answer
     for (let i = 0; i < allOptions; i++) {
       if(optionList.children[i].textContent == correctAns){
