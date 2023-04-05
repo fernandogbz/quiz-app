@@ -4,6 +4,7 @@ const infoBox = document.querySelector(".info-box");
 const exitBtn = infoBox.querySelector(".buttons .quit");
 const continueBtn = infoBox.querySelector(".buttons .restart");
 const quizBox = document.querySelector(".quiz-box");
+const timeCount = quizBox.querySelector(".timer .timer-sec");
 
 const optionList = document.querySelector(".option-list");
 
@@ -27,6 +28,7 @@ continueBtn.onclick = () => {
 
 let questionCount = 0;
 let questionNumber = 1;
+let counter;
 
 const nextBtn = quizBox.querySelector(".next-btn");
 
@@ -88,6 +90,10 @@ function optionSelected(answer) {
     optionList.children[i].classList.add("disabled");
   }
 }
+
+
+
+
 
 function questionCounter(index) {
   const bottomQuestionCounter = quizBox.querySelector(".total-questions");
