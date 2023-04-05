@@ -68,8 +68,15 @@ function optionSelected(answer) {
   } else {
     answer.classList.add("incorrect");
     console.log("Answer is Wrong");
+
+    // if answer is incorrect then automatically select the right answer
+    for (let i = 0; i < allOptions; i++) {
+      if(optionList.children[i].textContent == correctAns){
+        optionList.children[i].setAttribute("class", "option correct");
+      }
   }
-  
+}
+
   // Once user selected, disable all options
   for (let i = 0; i < allOptions; i++) {
     optionList.children[i].classList.add("disabled");
