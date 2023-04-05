@@ -24,6 +24,7 @@ continueBtn.onclick = () => {
   quizBox.classList.add("activeQuiz"); // show the quiz box
   showQuestions(0);
   questionCounter(1);
+
 }
 
 let questionCount = 0;
@@ -91,7 +92,10 @@ function optionSelected(answer) {
   }
 }
 
+function startTimer(time) {
+  counter = setInterval(timer, 1000);
 
+}
 
 
 
