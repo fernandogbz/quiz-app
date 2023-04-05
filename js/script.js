@@ -104,6 +104,10 @@ function startTimer(time) {
     if (time < 0) {
       clearInterval(counter);
       timeCount.textContent = "00";
+      timeCount.classList.add("flash");
+      timeCount.style.backgroundColor = "#f8d7da";
+      timeCount.style.color = "#a42834";
+      timeCount.style.border = "2px solid #a42834";
     }
   }
 }
