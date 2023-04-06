@@ -119,6 +119,10 @@ function startTimer(time) {
   }
 }
 
+function startTimerLine(time) {
+  counterLine = setInterval(timer, 29);
+}
+
 
 
 function questionCounter(index) {
