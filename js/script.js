@@ -76,6 +76,7 @@ function optionSelected(answer) {
     answer.classList.add("correct");
     console.log("Answer is Correct");
     answer.insertAdjacentHTML("beforeend", tickIcon);
+    answer.classList.add("pop");
   } else {
     answer.classList.add("incorrect");
     console.log("Answer is Wrong");
