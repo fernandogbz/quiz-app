@@ -103,6 +103,10 @@ function startTimer(time) {
   function timer() {
     timeCount.textContent = time;
     time--;
+    if (time < 9) {
+      let addZero = timeCount.textContent;
+      timeCount.textContent = "0" + addZero;
+    }
     if (time < 0) {
       clearInterval(counter);
       timeCount.textContent = "00";
