@@ -5,7 +5,7 @@ const exitBtn = infoBox.querySelector(".buttons .quit");
 const continueBtn = infoBox.querySelector(".buttons .restart");
 const quizBox = document.querySelector(".quiz-box");
 const timeCount = quizBox.querySelector(".timer .timer-sec");
-const timeLine = quizBox.querySelector(".timer .time-line");
+const timeLine = quizBox.querySelector("header .time-line");
 
 const optionList = document.querySelector(".option-list");
 
@@ -26,12 +26,14 @@ continueBtn.onclick = () => {
   showQuestions(0);
   questionCounter(1);
   startTimer(15);
+  startTimerLine(0);
 }
 
 let questionCount = 0;
 let questionNumber = 1;
 let counter;
 let timeValue = 15;
+let widthLineValue = 0;
 
 const nextBtn = quizBox.querySelector(".next-btn");
 
@@ -44,6 +46,8 @@ nextBtn.onclick = () => {
     questionCounter(questionNumber);
     clearInterval(counter);
     startTimer(timeValue);
+    clearInterval(counterLine);
+    startTimerLine(widthLineValue);
   } else {
     console.log("Questions completed");
   }
@@ -100,6 +104,7 @@ function optionSelected(answer) {
 }
 
 function startTimer(time) {
+  timeCount.classList.remove("flash");
   counter = setInterval(timer, 1000);
   function timer() {
     timeCount.textContent = time;
@@ -124,8 +129,9 @@ function startTimerLine(time) {
   function timer() {
     time += 1;
     timeLine.style.width = time + "px";
-    if (time < 549) {
+    if (time > 549) {
       clearInterval(counterLine);
+      timeLine.style.backgroundColor = "#a42834";
     }
   }
 }
