@@ -54,6 +54,7 @@ nextBtn.onclick = () => {
     nextBtn.style.display = "none";
   } else {
     console.log("Questions completed");
+    showResultBox();
   }
 }
 
@@ -107,6 +108,12 @@ function optionSelected(answer) {
     optionList.children[i].classList.add("disabled");
   }
   nextBtn.style.display = "block";
+}
+
+function showResultBox() {
+  infoBox.classList.remove("activeInfo"); // hide the info box
+  quizBox.classList.remove("activeQuiz"); // hide the quiz box
+  resultBox.classList.add("activeResult"); // show the result box
 }
 
 function startTimer(time) {
