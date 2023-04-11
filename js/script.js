@@ -48,6 +48,7 @@ nextBtn.onclick = () => {
     startTimer(timeValue);
     clearInterval(counterLine);
     startTimerLine(widthLineValue);
+    nextBtn.style.display = "none";
   } else {
     console.log("Questions completed");
   }
@@ -102,6 +103,7 @@ function optionSelected(answer) {
   for (let i = 0; i < allOptions; i++) {
     optionList.children[i].classList.add("disabled");
   }
+  nextBtn.style.display = "block";
 }
 
 function startTimer(time) {
