@@ -36,6 +36,9 @@ let timeValue = 15;
 let widthLineValue = 0;
 
 const nextBtn = quizBox.querySelector(".next-btn");
+const resultBox = document.querySelector(".result-box");
+const restartQuiz = resultBox.querySelector(".buttons .restart");
+const quittQuiz = resultBox.querySelector(".buttons .quit");
 
 // When next button clicked
 nextBtn.onclick = () => {
