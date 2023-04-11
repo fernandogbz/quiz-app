@@ -34,6 +34,7 @@ let questionNumber = 1;
 let counter;
 let timeValue = 15;
 let widthLineValue = 0;
+let userScore = 0;
 
 const nextBtn = quizBox.querySelector(".next-btn");
 const resultBox = document.querySelector(".result-box");
@@ -84,6 +85,8 @@ function optionSelected(answer) {
   let correctAns = questions[questionCount].answer;
   let allOptions = optionList.children.length;
   if(userAns == correctAns) {
+    userScore += 1;
+    console.log(userScore);
     answer.classList.add("correct");
     console.log("Answer is Correct");
     answer.insertAdjacentHTML("beforeend", tickIcon);
@@ -114,6 +117,8 @@ function showResultBox() {
   infoBox.classList.remove("activeInfo"); // hide the info box
   quizBox.classList.remove("activeQuiz"); // hide the quiz box
   resultBox.classList.add("activeResult"); // show the result box
+  const scoreText = resultBox.querySelector(".score-text");
+
 }
 
 function startTimer(time) {
