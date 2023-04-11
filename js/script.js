@@ -74,6 +74,7 @@ let crossIcon = '<div class="icon cross"><i class="fa-solid fa-times"></i></div>
 
 function optionSelected(answer) {
   clearInterval(counter);
+  clearInterval(counterLine);
   let userAns = answer.textContent;
   let correctAns = questions[questionCount].answer;
   let allOptions = optionList.children.length;
@@ -116,10 +117,10 @@ function startTimer(time) {
     if (time < 0) {
       clearInterval(counter);
       timeCount.textContent = "00";
-      timeCount.classList.add("flash");
-      timeCount.style.backgroundColor = "#f8d7da";
-      timeCount.style.color = "#a42834";
-      timeCount.style.border = "2px solid #a42834";
+      // timeCount.classList.add("flash");
+      // timeCount.style.backgroundColor = "#f8d7da";
+      // timeCount.style.color = "#a42834";
+      // timeCount.style.border = "2px solid #a42834";
     }
   }
 }
@@ -131,7 +132,7 @@ function startTimerLine(time) {
     timeLine.style.width = time + "px";
     if (time > 549) {
       clearInterval(counterLine);
-      timeLine.style.backgroundColor = "#a42834";
+      // timeLine.style.backgroundColor = "#a42834";
     }
   }
 }
