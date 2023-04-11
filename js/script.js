@@ -41,6 +41,10 @@ const resultBox = document.querySelector(".result-box");
 const restartQuiz = resultBox.querySelector(".buttons .restart");
 const quitQuiz = resultBox.querySelector(".buttons .quit");
 
+quitQuiz.onclick = () => {
+  window.location.reload();
+}
+
 // When next button clicked
 nextBtn.onclick = () => {
   if(questionCount < questions.length - 1){
