@@ -39,7 +39,7 @@ let userScore = 0;
 const nextBtn = quizBox.querySelector(".next-btn");
 const resultBox = document.querySelector(".result-box");
 const restartQuiz = resultBox.querySelector(".buttons .restart");
-const quittQuiz = resultBox.querySelector(".buttons .quit");
+const quitQuiz = resultBox.querySelector(".buttons .quit");
 
 // When next button clicked
 nextBtn.onclick = () => {
@@ -118,7 +118,18 @@ function showResultBox() {
   quizBox.classList.remove("activeQuiz"); // hide the quiz box
   resultBox.classList.add("activeResult"); // show the result box
   const scoreText = resultBox.querySelector(".score-text");
-
+  if(userScore > 3) {
+    let scoreTag = '<span> and congrats! You got <p>' + userScore + '</p>out of<p>' + questions.length + '</p></span>';
+    scoreText.innerHTML = scoreTag;
+  }
+  else if(userScore > 1) {
+    let scoreTag = '<span> and nice, you got <p>' + userScore + '</p>out of<p>' + questions.length + '</p></span>';
+    scoreText.innerHTML = scoreTag;
+  }
+  else {
+    let scoreTag = '<span> and sorry, you got only<p>' + userScore + '</p>out of<p>' + questions.length + '</p></span>';
+    scoreText.innerHTML = scoreTag;
+  }
 }
 
 function startTimer(time) {
