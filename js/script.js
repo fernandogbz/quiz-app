@@ -32,6 +32,7 @@ continueBtn.onclick = () => {
 let questionCount = 0;
 let questionNumber = 1;
 let counter;
+let counterLine;
 let timeValue = 15;
 let widthLineValue = 0;
 let userScore = 0;
@@ -40,6 +41,23 @@ const nextBtn = quizBox.querySelector(".next-btn");
 const resultBox = document.querySelector(".result-box");
 const restartQuiz = resultBox.querySelector(".buttons .restart");
 const quitQuiz = resultBox.querySelector(".buttons .quit");
+
+restartQuiz.onclick = () => {
+  quizBox.classList.add("activeQuiz"); // show the quiz box
+  resultBox.classList.remove("activeResult"); // hide the result box
+  let questionCount = 0;
+  let questionNumber = 1;
+  let timeValue = 15;
+  let widthLineValue = 0;
+  let userScore = 0;
+  showQuestions(questionCount);
+  questionCounter(questionNumber);
+  clearInterval(counter);
+  startTimer(timeValue);
+  clearInterval(counterLine);
+  startTimerLine(widthLineValue);
+  nextBtn.style.display = "none";
+}
 
 quitQuiz.onclick = () => {
   window.location.reload();
@@ -107,7 +125,7 @@ function optionSelected(answer) {
         optionList.children[i].setAttribute("class", "option correct");
         optionList.children[i].insertAdjacentHTML("beforeend", tickIcon);
       }
-  }
+    }
 }
 
   // Once user selected, disable all options
@@ -153,6 +171,8 @@ function startTimer(time) {
       // timeCount.style.backgroundColor = "#f8d7da";
       // timeCount.style.color = "#a42834";
       // timeCount.style.border = "2px solid #a42834";
+
+
     }
   }
 }
