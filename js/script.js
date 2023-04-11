@@ -172,7 +172,19 @@ function startTimer(time) {
       // timeCount.style.color = "#a42834";
       // timeCount.style.border = "2px solid #a42834";
 
+      let correctAns = questions[questionCount].answer;
+      let allOptions = optionList.children.length;
 
+      for (let i = 0; i < allOptions; i++) {
+        if(optionList.children[i].textContent == correctAns){
+          optionList.children[i].setAttribute("class", "option correct");
+          optionList.children[i].insertAdjacentHTML("beforeend", tickIcon);
+        }
+      }
+      for (let i = 0; i < allOptions; i++) {
+        optionList.children[i].classList.add("disabled");
+      }
+      nextBtn.style.display = "block";
     }
   }
 }
