@@ -168,6 +168,7 @@ function startTimer(time) {
     if (time < 0) {
       clearInterval(counter);
       timeCount.textContent = "00";
+      timeOff.textContent = "Time Off";
       // timeCount.classList.add("flash");
       // timeCount.style.backgroundColor = "#f8d7da";
       // timeCount.style.color = "#a42834";
