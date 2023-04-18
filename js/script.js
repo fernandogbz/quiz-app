@@ -79,6 +79,8 @@ nextBtn.onclick = () => {
     nextBtn.style.display = "none";
     timeOff.textContent = "Time Left";
   } else {
+    clearInterval(counter);
+    clearInterval(counterLine);
     console.log("Questions completed");
     showResultBox();
   }
