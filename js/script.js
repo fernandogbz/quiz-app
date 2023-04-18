@@ -58,6 +58,7 @@ restartQuiz.onclick = () => {
   clearInterval(counterLine);
   startTimerLine(widthLineValue);
   nextBtn.style.display = "none";
+  timeOff.textContent = "Time Left";
 }
 
 quitQuiz.onclick = () => {
@@ -76,6 +77,7 @@ nextBtn.onclick = () => {
     clearInterval(counterLine);
     startTimerLine(widthLineValue);
     nextBtn.style.display = "none";
+    timeOff.textContent = "Time Left";
   } else {
     console.log("Questions completed");
     showResultBox();
