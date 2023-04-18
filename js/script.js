@@ -6,6 +6,7 @@ const continueBtn = infoBox.querySelector(".buttons .restart");
 const quizBox = document.querySelector(".quiz-box");
 const timeCount = quizBox.querySelector(".timer .timer-sec");
 const timeLine = quizBox.querySelector("header .time-line");
+const timeOff = quizBox.querySelector("header .time-text");
 
 const optionList = document.querySelector(".option-list");
 
